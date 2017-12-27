@@ -97,7 +97,7 @@ public abstract class BasePicActivity extends BaseDialogActivity implements Base
         }
         tempFile = new File(file, saveFileName+".jpg");
         if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.N){
-            String authorities = "com.ly.luoyan.mylibrary.fileprovider";
+            String authorities = getPackageName()+".fileprovider";
             //添加这一句表示对目标应用临时授权该Uri所代表的文件
             cameraIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             cameraIntent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);//设置Action为拍照
@@ -330,7 +330,7 @@ public abstract class BasePicActivity extends BaseDialogActivity implements Base
 //        File file = new File(path, "cut.jpg");
         //由于一些Android 7.0以下版本的手机在剪裁保存到URI会有问题，所以根据版本处理下兼容性
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            return FileProvider.getUriForFile(this, "com.ly.luoyan.mylibrary.fileprovider", tempFile);
+            return FileProvider.getUriForFile(this, getPackageName()+".fileprovider", tempFile);
         } else {
             return Uri.fromFile(tempFile);
         }
