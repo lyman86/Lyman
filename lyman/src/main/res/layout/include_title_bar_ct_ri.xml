@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:lyman="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <com.ly.luoyan.mylibrary.widget.CustomSelectItem
+        android:id="@+id/cus_title_bar"
+        android:layout_width="match_parent"
+        lyman:centerTypeSelect="text"
+        lyman:centerTextSelect = "@string/default_title_text"
+        lyman:centerTextSizeSelect = "@dimen/title_center_text_size"
+        lyman:centerTextColorSelect = "@color/title_bar_text"
+        lyman:rightTypeSelect="image"
+        lyman:rightImageSourceSelect="@drawable/icon_my_setting"
+        lyman:rightImageTimesSelect="0.9px"
+        lyman:rightImagePaddingRightSelect="10dp"
+        android:background="@color/title_bar"
+        android:layout_height="@dimen/title_bar_height"/>
+
+</LinearLayout>

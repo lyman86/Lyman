@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lyman="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.ly.luoyan.mylibrary.widget.CustomSelectItem
+        android:id="@+id/cus_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bar"
+        lyman:centerTypeSelect="text"
+        lyman:centerTextSelect="标题"
+        lyman:centerTextSizeSelect = "@dimen/title_center_text_size"
+        lyman:centerTextColorSelect="@color/write"
+        lyman:leftTypeSelect="image"
+        lyman:leftImageSourceSelect="@drawable/icon_back"
+        lyman:leftImagePaddingLeftSelect="10dp"
+        lyman:leftImageTimesSelect="0.9px"
+        lyman:leftSideTypeSelect="text"
+        lyman:leftSideTextSelect="返回"
+        lyman:leftSideTextPaddingLeftSelect="5dp"
+        lyman:leftSideTextSizeSelect="18dp"
+        lyman:leftSideTextColorSelect="@color/write"
+
+        lyman:rightTypeSelect="image"
+        lyman:rightImageSourceSelect="@drawable/icon_my_setting"
+        lyman:rightImagePaddingRightSelect="10dp"
+        lyman:gravitySelect="bottom"
+        lyman:allPaddingBootomSelect="12dp"
+        />
+
+</LinearLayout>

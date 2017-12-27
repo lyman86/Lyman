@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Library</string>
+
+    <string name="default_title_text">Title</string>
+
+    <string name="buy_lottery">购彩</string>
+    <string name="buy_together">合买</string>
+    <string name="buy_sport_live">比分</string>
+    <string name="buy_open_award">开奖</string>
+    <string name="my">我的</string>
+</resources>
